@@ -206,4 +206,11 @@ main {
     h2 {
         text-align: center;
     }
+    .biography h2, .skills-container h2, .skills-container h3 {
+        text-align: center;
+    }
+    .biography p, .skills-container {
+        width: 88%;
+    }
+        
 }
