@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #D4EBF8;
+}
+header {
+
+    padding: 2.5em;
+    display: flex;
+    background-color: #0A3981;
+    border-bottom-left-radius: 4em;
+    border-bottom-right-radius: 4em;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jm-office {
+    border: .1em solid #1F509A;
+    border-radius: 1em;
+    box-shadow: .2em .2em .5em #D4EBF8;
+}
+.introduction {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 2.6rem;
+    color: #D4EBF8;
+}
+h2 {
+    padding-bottom: 1em;
+    color: #00100B;
+    text-align: center;
+    font-size: 1.7rem;
+}
+h3 {
+    font-size: 1.5rem;
+    padding: 1em 0;
+    color: #00100B;
+}
+.introduction p {
+    padding-top: 1em;
+    color: #D4EBF8;
+    font-size: 1.1rem;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.7em;
+    gap: 1em;
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-radius: .6em;
+    background-color: #32DE8A;
+    padding: .4em .2em;
+    width: 150px;
+    height: 6vh;
+}
+
+
+/* Main styling section */
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+}
+.biography p {
+    width: 56%;
+}
+
+
+/* Skills styling section */
+.skill-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    width: 56%;
+}
+.skills-details {
+    display: flex;
+    
+    align-items: center;
+    gap: 2em;
+}
+.skills-images{
+    width: 150px;
+}
+.skills-details li {
+    text-align: justify;
+    padding: .4em 0;
+    color: #00100B;
+}
+
+
+
+
+/* Contact styling section */
+.contact-section {
+    display: flex;
+    background-image: url("./../assets/images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
+    height: 100vh;
+}
+.contact-container {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    backdrop-filter: blur(7px);
+    box-shadow:.2em .1em .5em #32DE8A;
+}
+.contact-container h2 {
+    font-size: 1.8em;
+    color: #D4EBF8;
+
+}
+@media (max-width:601px) {
+    .contact-container {
+        height: 34vh;
+            width: 75vw;
+        }
+    .skills-details {
+        flex-direction: column;
+    }
+}
+@media (max-width: 320px) {
+
+    .jm-office {
+        width: 180px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    
+    .introduction p {
+        font-size: .9rem;
+    }
+    a {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 414px) {
+
+    .jm-office {
+        width: 260px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .introduction p {
+        font-size: .9rem;
+    }
+    a {
+        font-size: 1rem;
+    }
+
+}
+@media (min-width: 415px) and (max-width: 600px){
+
+    .biography p, .skills-container {
+        width: 88%;
+    }
+}
+@media (max-width:426px) {
+    h2 {
+        text-align: center;
+    }
+}
