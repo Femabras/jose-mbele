@@ -161,6 +161,9 @@ main {
     .skills-details {
         flex-direction: column;
     }
+    h3, h2 {
+        text-align: center;
+    }
 }
 @media (max-width: 320px) {
 
@@ -203,14 +206,11 @@ main {
     }
 }
 @media (max-width:426px) {
-    h2 {
-        text-align: center;
-    }
-    .biography h2, .skills-container h2, .skills-container h3 {
+    h3, h2 {
         text-align: center;
     }
     .biography p, .skills-container {
         width: 88%;
     }
-        
+     
 }
